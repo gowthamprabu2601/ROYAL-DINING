@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dining | Premium Culinary Experience</title>
+
+    <!-- External CDNs -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" id="nav-toggle">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#specialties">Specialties</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+            <h1 class="logo">ROYAL<span>DINING</span></h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+            <h4 class="hero-subtitle">WELCOME TO EXCELLENCE</h4>
+            <h1 class="main-title">Taste the Royal <br> Heritage</h1>
+            <p>Experience a symphony of flavors crafted by world-class chefs.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#reservation" class="btn btn-secondary">Book Table</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="section-padding container">
+        <h2 class="section-title" data-aos="fade-up">Our Specialties</h2>
+        <div class="category-grid">
+            <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="Fruit">
+                <div class="card-overlay"><h3>Fresh Harvest</h3></div>
+            </div>
+            <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="Veg">
+                <div class="card-overlay"><h3>Organic Greens</h3></div>
+            </div>
+            <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="Grain">
+                <div class="card-overlay"><h3>Natural Grains</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=500" alt="Item 1">
+                    <div class="menu-info">
+                        <h3>Royal Paneer Tikka</h3>
+                        <p>Grilled cottage cheese in royal spices.</p>
+                        <span class="price">₹ 250</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-right" data-aos-delay="200">
+                    <img src="https://plus.unsplash.com/premium_photo-1691030658788-41d188eabb64?w=500" alt="Item 2">
+                    <div class="menu-info">
+                        <h3>Maharaja Thali</h3>
+                        <p>A platter of 12 traditional royal curries.</p>
+                        <span class="price">₹ 450</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-right" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=500" alt="Item 3">
+                    <div class="menu-info">
+                        <h3>Saffron Biryani</h3>
+                        <p>Aromatic rice with saffron & herbs.</p>
+                        <span class="price">₹ 320</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation" class="section-padding parallax-bg">
+        <div class="container reservation-box" data-aos="zoom-in">
+            <h2 class="section-title" style="color:#fff">Book A Table</h2>
+            <form id="res-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <textarea rows="5" placeholder="Special Requests..."></textarea>
+                <button type="submit" class="btn btn-primary" style="margin-top:20px; width:100%">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h2 class="logo">ROYAL<span>DINING</span></h2>
+            <p>Modern Premium Dining Since 1998.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> GOWTHAM PRABU S.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
